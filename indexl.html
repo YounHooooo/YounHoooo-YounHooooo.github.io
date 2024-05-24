@@ -6,6 +6,7 @@
 
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="./js//main.js" defer></script>
@@ -16,30 +17,31 @@
     <title>이윤호 포트폴리오</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="nav container">
         <!-- 이미지(로고)-->
-        <div id="logo">
-          <a href="#">Lee Younho</a>
+        <div id="nav__logo">
+          <img class="nav__img" src="" alt="" />
+          <a href="#" class="nav__brand">Lee Younho</a>
         </div>
 
         <!-- 메뉴-->
-        <div>
-          <ul>
-            <li>
-              <a href="#home">Home</a>
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
             </li>
-            <li>
-              <a href="#about">About</a>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
             </li>
-            <li>
-              <a href="#skills">Skills</a>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
             </li>
-            <li>
-              <a href="#projects">Projects</a>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
-            <li>
-              <a href="#contact">Contact</a>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
         </div>
