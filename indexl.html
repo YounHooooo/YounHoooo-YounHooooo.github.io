@@ -21,7 +21,7 @@
       <nav class="nav container">
         <!-- 이미지(로고)-->
         <div id="nav__logo">
-          <img class="nav__img" src="" alt="" />
+          <!-- <img class="nav__img" src="" alt="" /> -->
           <a href="#" class="nav__brand">Lee Younho</a>
         </div>
 
@@ -29,7 +29,7 @@
         <div class="nav__menu" id="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -49,36 +49,41 @@
     </header>
     <main>
       <!-- Home-->
-      <section id="home">
+      <section class="home container" id="home">
         <!-- Home Data-->
-        <h2>
-          안녕하세요! <br />
-          프론트엔드를 지망하는<br />
-          <strong>이윤호</strong> 입니다!
-        </h2>
+        <div class="home__data">
+          <h2 class="home__title">
+            안녕하세요! <br />
+            프론트엔드를 지망하는<br />
+            <strong class="home__title-color">이윤호</strong> 입니다!
+          </h2>
 
-        <a href="#contact">Contact</a>
-        <div>
-          <a
-            href="https://github.com/YounHooooo"
-            target="_blank"
-            title="이윤호 깃헙 링크"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <a href="#contact" class="button">Contact</a>
 
-          <i class="fa-solid fa-blog"></i>
+          <div class="home__social">
+            <a
+              href="https://github.com/YounHooooo"
+              target="_blank"
+              title="이윤호 깃헙 링크"
+            >
+              <i class="fa-brands fa-github home__social-icon"></i>
+            </a>
+
+            <i class="fa-solid fa-blog home__social-icon"></i>
+          </div>
         </div>
 
         <!-- Home Iamge-->
-        <div>
-          <img />
-        </div>
+        <img
+          class="home__img"
+          src="./images/skills/노트북.jpg"
+          alt="프로필 이미지"
+        />
       </section>
 
       <!-- About-->
-      <section id="about">
-        <h2>About</h2>
+      <section class="section" id="about">
+        <h2 class="section__title">About</h2>
 
         <div>
           <div>
