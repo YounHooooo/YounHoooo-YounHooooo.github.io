@@ -218,3 +218,18 @@ body {
   align-items: center;
   column-gap: 3rem;
 }
+
+.about__subtitle {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-2);
+}
+
+.about__text {
+  line-height: 1.4rem;
+}
+
+.about__img {
+  max-width: 310px;
+  border-radius: 0.5rem;
+}

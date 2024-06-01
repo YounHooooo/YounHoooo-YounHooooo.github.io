@@ -87,9 +87,11 @@
 
         <div class="about__container container">
           <!-- 이미지 -->
-          <div class="about__img">
-            <img src="https://via.placeholder.com/300x350" alt="샘플이미지" />
-          </div>
+          <img
+            class="about__img"
+            src="https://via.placeholder.com/300x350"
+            alt="샘플이미지"
+          />
           <!-- 문자열 -->
           <div class="about__data">
             <h3 class="about__subtitle">저는 이렇게 답합니다</h3>
@@ -104,30 +106,30 @@
       </section>
 
       <!-- Skills-->
-      <section id="skills">
-        <h2>Skills</h2>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
 
-        <div>
+        <div class="skills__container container">
           <!--스킬 데이터-->
           <div>
-            <h3>Profesional Skills</h3>
-            <p>
+            <h3 class="skills__subtitle">Profesional Skills</h3>
+            <p class="skills__text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
               modi libero, atque hic consequuntur eum numquam reiciendis quas
               consequatur ipsam quo veniam quam unde sunt officia adipisci
               recusandae perferendis temporibus?
             </p>
             <div>
-              <article>
-                <div>
+              <article class="skills__data">
+                <div class="skills__names">
                   <!-- icon -->
-                  <i class="fa-brands fa-html5"></i>
+                  <i class="fa-brands fa-html5 skills__icon"></i>
                   <!-- skill name -->
-                  <span>HTML5</span>
+                  <span class="skills__name">HTML5</span>
                 </div>
                 <div>
                   <!-- percentage -->
-                  <span>85%</span>
+                  <span class="skills__percentage">85%</span>
                 </div>
 
                 <progress id="html5" max="100" value="85"></progress>
@@ -189,8 +191,8 @@
       </section>
 
       <!-- Projects-->
-      <sction id="projects">
-        <h2>Projects</h2>
+      <sction class="section" id="projects">
+        <h2 class="section__title">Projects</h2>
         <div>
           <a href="" target="_blank" title="">
             <img src="" alt="" />
@@ -199,8 +201,8 @@
       </sction>
 
       <!-- Contact-->
-      <section id="contact">
-        <h2>Contact</h2>
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2>
 
         <div>
           <form action="">
