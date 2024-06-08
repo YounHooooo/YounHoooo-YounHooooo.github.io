@@ -85,6 +85,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .nav {
@@ -299,6 +300,8 @@ body {
   border-radius: 0.5rem;
 }
 
+/* projects */
+
 .projects__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -319,4 +322,67 @@ body {
 
 .projects__img:hover {
   transform: scale(1.05);
+}
+
+/* Contact */
+.contact__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  width: 360px;
+}
+
+.contact__input {
+  width: 100%;
+  outline: none;
+  border: 1.5px solid var(--dark-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: var(--spacing-1);
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-bold);
+}
+
+.contact__button {
+  margin-left: auto;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  font-weight: var(--font-weight-bold);
+}
+
+.footer__copy {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Floating Button */
+.floating__button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-1);
+  transition: 0.3;
+}
+
+.floating__button:hover {
+  background-color: var(--dark-color);
+}
+
+.floating-button-icon {
+  font-size: 1.2rem;
 }

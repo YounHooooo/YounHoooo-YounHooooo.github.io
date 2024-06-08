@@ -299,14 +299,27 @@
       </sction>
 
       <!-- Contact-->
-      <section class="section" id="contact">
+      <section class="contact section" id="contact">
         <h2 class="section__title">Contact</h2>
 
-        <div>
-          <form action="">
-            <input type="text" name="name" placeholder="이름" required />
-            <input type="text" name="subject" placeholder="제목" required />
+        <div class="contact__container container">
+          <form id="contactForm" class="contact__form">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="이름"
+              required
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="subject"
+              placeholder="제목"
+              required
+            />
             <textarea
+              class="contact__input"
               name="message"
               id="message"
               cols="30"
@@ -314,15 +327,20 @@
               placeholder="내용"
               required
             ></textarea>
-            <button>보내기</button>
+            <button class="contact__button button">보내기</button>
           </form>
         </div>
       </section>
-
-      <!-- Footer-->
-      <footer>
-        <p>Copyright &copy; 2024 Lee Younho All rights reserved.</p>
-      </footer>
+      <button class="floating__button" id="floatingButton">
+        <i class="fa-solid fa-arrow-up floating-button-icon"></i>
+      </button>
     </main>
+
+    <!-- Footer-->
+    <footer class="footer">
+      <p class="footer__copy">
+        Copyright &copy; 2024 Lee Younho All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
