@@ -298,3 +298,25 @@ body {
   width: 100%;
   border-radius: 0.5rem;
 }
+
+.projects__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.projects__img {
+  width: 100%;
+  transition: 0.5s;
+  display: block;
+}
+
+.projects__link {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-1);
+}
+
+.projects__img:hover {
+  transform: scale(1.05);
+}
