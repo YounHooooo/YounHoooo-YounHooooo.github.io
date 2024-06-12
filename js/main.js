@@ -26,12 +26,27 @@ const observer = new IntersectionObserver((entries) => {
       document
         .querySelector(`.nav__link[href*=${sectionId}]`)
         .classList.add('active-link');
-      // entry.target.classList.add('bg-dark');
+
+      const $items = document.querySelectorAll(
+        `.nav__link:not([href*=${sectionId}])`,
+      );
+      $items.forEach((el) => el.classList.remove('active-link'));
     } else {
-      // entry.target.classList.remove('bg-dark');
     }
   });
 }, options);
 
 const $sectionList = document.querySelectorAll('.section');
 $sectionList.forEach((el) => observer.observe(el));
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 200,
+});
+scrollReveal.reveal('.home__data, .about__img, .skills__text');
+scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
+scrollReveal.reveal('.skills__data, .projects, .contact__input', {
+  interval: 200,
+});
