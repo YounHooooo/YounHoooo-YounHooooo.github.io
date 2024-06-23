@@ -16,6 +16,13 @@
     ></script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      document.querySelectorAll('.card').forEach((card) => {
+        card.addEventListener('click', () => {
+          card.classList.toggle('is-flipped');
+        });
+      });
+    </script>
     <title>이윤호 포트폴리오</title>
   </head>
   <body>
@@ -79,11 +86,11 @@
         </div>
 
         <!-- Home Iamge-->
-        <img
+        <!-- <img
           class="home__img"
           src="./images/skills/노트북.jpg"
           alt="프로필 이미지"
-        />
+        /> -->
       </section>
 
       <!-- About-->
@@ -95,7 +102,7 @@
           <img
             class="about__img"
             src="https://via.placeholder.com/300x350"
-            alt="샘플이미지"
+            alt="샘플 이미지"
           />
           <!-- 문자열 -->
           <div class="about__data">
@@ -248,58 +255,6 @@
               alt="yh-shop"
             />
           </a>
-
-          <a
-            class="projects__link"
-            href="https://yh-shop.netlify.app/"
-            target="_blank"
-            title="yh-shop"
-          >
-            <img
-              class="projects__img"
-              src="./images/projects/yh-shop.png"
-              alt="yh-shop"
-            />
-          </a>
-
-          <a
-            class="projects__link"
-            href="https://yh-shop.netlify.app/"
-            target="_blank"
-            title="yh-shop"
-          >
-            <img
-              class="projects__img"
-              src="./images/projects/yh-shop.png"
-              alt="yh-shop"
-            />
-          </a>
-
-          <a
-            class="projects__link"
-            href="https://yh-shop.netlify.app/"
-            target="_blank"
-            title="yh-shop"
-          >
-            <img
-              class="projects__img"
-              src="./images/projects/yh-shop.png"
-              alt="yh-shop"
-            />
-          </a>
-
-          <a
-            class="projects__link"
-            href="https://yh-shop.netlify.app/"
-            target="_blank"
-            title="yh-shop"
-          >
-            <img
-              class="projects__img"
-              src="./images/projects/yh-shop.png"
-              alt="yh-shop"
-            />
-          </a>
         </div>
       </section>
 
@@ -336,7 +291,7 @@
           </form>
         </div>
       </section>
-      <button class="floating__button" id="floatingButton">
+      <button class="floating__button" id="floating-button">
         <i class="fa-solid fa-arrow-up floating-button-icon"></i>
       </button>
     </main>

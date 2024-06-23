@@ -3,20 +3,32 @@ function toggleMenu() {
   $navMenu.classList.toggle('show');
 }
 
+function handleFloatingButton() {
+  const $floatingButton = document.getElementById('floating-button');
+  $floatingButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth',
+    });
+  });
+}
+
 function init() {
   const $navToggle = document.getElementById('nav-toggle');
-  $navToggle.addEventListener('click', () => {
+  addEventListener('click', () => {
     // Menu Toggle
     toggleMenu();
   });
 
   const $navLinkList = document.querySelectorAll('.nav__link');
   $navLinkList.forEach((el) => el.addEventListener('click', toggleMenu));
+
+  handleFloatingButton();
 }
 init();
 
 const options = {
-  threshold: 0.5,
+  threshold: 1,
 };
 
 const observer = new IntersectionObserver((entries) => {
