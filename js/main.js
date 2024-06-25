@@ -62,3 +62,19 @@ scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
 scrollReveal.reveal('.skills__data, .projects, .contact__input', {
   interval: 200,
 });
+
+const typeit = new TypeIt('#typeit', {
+  speed: 70,
+  startDelay: 1300,
+  waitUntilVisible: true,
+});
+
+typeit
+  .type('안녕하세요 😊<br/>')
+  .type('신입 프론트엔드 개발자 ')
+  .type('<strong class="home__title-color">Lee Youn ho</strong>', {
+    delay: 300,
+  })
+  .delete(11, { delay: 300 })
+  .type('<strong class="home__title-color">이윤호</strong>입니다.')
+  .go();

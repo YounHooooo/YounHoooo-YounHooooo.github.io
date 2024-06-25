@@ -10,9 +10,10 @@
   --grey-color: #616161;
   --blue-color: #0336ff;
   --red-color: #b71c1c;
+  --skyblue-color: #b3cbd2;
 
   /* Brand Colors */
-  --primary-color: var(--blue-color);
+  --primary-color: var(--black-color);
   --secondary-color: #26a69a;
   --accent-color: #9c27b0;
   --positive-color: #21ba45;
@@ -148,11 +149,20 @@ body {
 }
 
 .home__title {
-  font-size: var(--font-size-2);
-  line-height: calc(var(--font-size-2) * 1.4);
+  font-size: var(--font-size-3);
+  line-height: calc(var(--font-size-2) * 1.2);
   font-weight: var(--font-weight-black);
-  margin-bottom: var(--spacing-3);
+  margin-bottom: var(--spacing-1);
 }
+
+.home__data {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  line-height: calc(var(--font-size-2) * 1.05);
+}
+/* .home__introduce {
+  font-size: var(--font-size-4);
+} */
 
 .home__title-color {
   color: var(--primary-color);
@@ -243,6 +253,16 @@ body {
 .about__img {
   max-width: 310px;
   border-radius: 0.5rem;
+}
+
+.about__list {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  color: var(--black-color);
+}
+
+.about__list li {
+  margin-bottom: var(--spacing-2);
 }
 
 /* SKills */
@@ -426,7 +446,7 @@ body {
   .nav__menu {
     position: fixed;
     height: 100%;
-    background-color: var(--dark-color);
+    background-color: var(--grey-color);
     width: 80%;
     top: var(--header-height);
     right: -100%;
