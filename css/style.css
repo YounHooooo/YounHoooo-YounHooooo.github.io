@@ -84,8 +84,8 @@ body {
 
 /* Header */
 .header {
-  background-color: var(--white-color);
-  color: var(--black-color);
+  background-color: var(--dark-color);
+  color: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -130,7 +130,7 @@ body {
 
 .active-link::after,
 .nav__link:hover::after {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   height: 0.18rem;
   content: '';
   width: 100%;
@@ -234,25 +234,29 @@ body {
 }
 
 /* About */
+
 .about__container {
   display: flex;
   align-items: center;
-  column-gap: 3rem;
+  column-gap: 5rem;
+  justify-content: center;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.25);
+  min-height: 500px;
 }
 
-.about__subtitle {
+/* .about__subtitle {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-2);
-}
+} */
 
-.about__text {
+/* .about__text {
   line-height: 1.4rem;
-}
+} */
 
 .about__img {
   max-width: 310px;
-  border-radius: 0.5rem;
+  border-radius: 50%;
 }
 
 .about__list {
@@ -263,6 +267,9 @@ body {
 
 .about__list li {
   margin-bottom: var(--spacing-2);
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
 }
 
 /* SKills */
@@ -420,11 +427,9 @@ body {
 .nav__toggle {
   display: none;
 }
-
 .show {
   right: 0 !important;
 }
-
 /* Mobile */
 @media only screen and (max-width: 768px) {
   :root {
@@ -437,7 +442,6 @@ body {
 
     --header-height: 3rem;
   }
-
   .nav__toggle {
     display: block;
     cursor: pointer;
@@ -445,8 +449,8 @@ body {
   }
   .nav__menu {
     position: fixed;
+    background-color: var(--dark-color);
     height: 100%;
-    background-color: var(--grey-color);
     width: 80%;
     top: var(--header-height);
     right: -100%;
@@ -456,7 +460,6 @@ body {
   .nav__list {
     display: block;
   }
-
   .nav__item {
     margin-left: 0;
     margin-bottom: var(--spacing-4);
@@ -476,11 +479,14 @@ body {
 
   /* About */
   .about__container {
+    display: flex;
     flex-direction: column;
     text-align: center;
+    padding: var(--spacing-5);
+    max-width: 460px;
   }
 
-  .about__subtitle {
+  .about__list {
     margin-top: var(--spacing-2);
   }
 

@@ -15,16 +15,17 @@ function handleFloatingButton() {
 
 function init() {
   const $navToggle = document.getElementById('nav-toggle');
-  addEventListener('click', () => {
+  $navToggle.addEventListener('click', () => {
     // Menu Toggle
     toggleMenu();
   });
 
-  const $navLinkList = document.querySelectorAll('.nav__link');
+  const $navLinkList = document.querySelectorAll('.nav__link ');
   $navLinkList.forEach((el) => el.addEventListener('click', toggleMenu));
 
   handleFloatingButton();
 }
+
 init();
 
 const options = {
@@ -43,14 +44,15 @@ const observer = new IntersectionObserver((entries) => {
         `.nav__link:not([href*=${sectionId}])`,
       );
       $items.forEach((el) => el.classList.remove('active-link'));
-    } else {
     }
   });
 }, options);
 
 const $sectionList = document.querySelectorAll('.section');
 $sectionList.forEach((el) => observer.observe(el));
-
+// observer.observe($workSection);
+// observer.observe($workSection);
+// observer.observe($workSection);
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '60px',
@@ -59,10 +61,11 @@ const scrollReveal = ScrollReveal({
 });
 scrollReveal.reveal('.home__data, .about__img, .skills__text');
 scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
-scrollReveal.reveal('.skills__data, .projects, .contact__input', {
+scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
   interval: 200,
 });
 
+// TypeIt
 const typeit = new TypeIt('#typeit', {
   speed: 70,
   startDelay: 1300,
@@ -71,7 +74,7 @@ const typeit = new TypeIt('#typeit', {
 
 typeit
   .type('안녕하세요 😊<br/>')
-  .type('신입 프론트엔드 개발자 ')
+  .type('신입 프론트엔드 웹 개발자 ')
   .type('<strong class="home__title-color">Lee Youn ho</strong>', {
     delay: 300,
   })
