@@ -59,9 +59,9 @@ const scrollReveal = ScrollReveal({
   duration: 2000,
   delay: 200,
 });
-scrollReveal.reveal('.home__data, .about__img, .skills__text');
+scrollReveal.reveal('.home__data, .about__img, .skills__text, .about__list');
 scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
-scrollReveal.reveal('.skills__data, .work__link, .contact__input', {
+scrollReveal.reveal('.skills__data, .contact__input', {
   interval: 200,
 });
 
