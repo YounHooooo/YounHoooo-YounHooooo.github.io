@@ -74,7 +74,7 @@ const typeit = new TypeIt('#typeit', {
 
 typeit
   .type('안녕하세요 😊<br/>')
-  .type('신입 프론트엔드 웹 개발자 ')
+  .type('프론트엔드 웹 개발자를 희망하는 ')
   .type('<strong class="home__title-color">Lee Youn ho</strong>', {
     delay: 300,
   })
