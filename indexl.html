@@ -30,9 +30,7 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <!-- 이미지(로고)-->
         <div id="nav__logo">
-          <!-- <img class="nav__img" src="" alt="" /> -->
           <a href="#" class="nav__brand">Lee Younho</a>
         </div>
 
@@ -67,31 +65,12 @@
         <!-- Home Data-->
         <div class="home__data">
           <h3 id="typeit" class="home__title"></h3>
-          <p>배움을 즐기고 새로운 지식을 얻는 것을 좋아합니다.</p>
-          <p></p>
-          <p>계속해서 성장하는 프론트엔드 개발자가 되고 싶습니다.</p>
+          <p>학습 과정에서 처음으로 진정한 재미를 느꼈습니다.</p>
+          <p>배움을 즐기며 새로운 지식을 얻는 것을 좋아하는 저는</p>
+          <p>끈임없이 성장하는 프론트엔드 개발자가 되고 싶습니다.</p>
 
           <a href="#about" class="about__button button">더 알아보기 ↓</a>
-
-          <!--<div class="home__social">
-            <a
-              href="https://github.com/YounHooooo"
-              target="_blank"
-              title="이윤호 깃헙 링크"
-            >
-              <i class="fa-brands fa-github home__social-icon"></i>
-            </a>
-
-            <i class="fa-solid fa-blog home__social-icon"></i>
-          </div> -->
         </div>
-
-        <!-- Home Iamge-->
-        <!-- <img
-          class="home__img"
-          src="./images/skills/노트북.jpg"
-          alt="프로필 이미지"
-        /> -->
       </section>
 
       <!-- About-->
@@ -102,14 +81,10 @@
           <!-- 이미지 -->
           <img
             class="about__img"
-            src="./images/about/포트폴리오 사진.jpg"
+            src="./images/about/인물 이미지.png"
             alt="포트폴리오 이미지"
           />
-          <!-- 문자열 -->
-          <!-- <div class="about__data">
-            <h3 class="about__subtitle">저는 이렇게 답합니다</h3>
-            <p class="about__text">123</p>
-          </div> -->
+
           <div>
             <ul class="about__list">
               <li><i class="fa-solid fa-user"></i><span>이윤호</span></li>
@@ -284,15 +259,6 @@
               </article>
             </div>
           </div>
-
-          <!-- <div>
-            <img
-              class="skills__img"
-              src="./images/skills/노트북.jpg"
-              alt="노트북 이미지"
-            />
-            <img class="skills__img" src="" alt="" />
-          </div> -->
         </div>
       </section>
 
@@ -301,26 +267,53 @@
         <h2 class="section__title">Projects</h2>
         <div class="projects__container container">
           <div class="projects__card">
-            <h3 class="projects__name">yh-shop</h3>
-            <h2 class="projects__data">2024.00/00 ~ 2024.00/00</h2>
+            <h3 class="projects__name">포트폴리오</h3>
+            <h2 class="projects__data">2024.06.10 ~ 2023.07.05</h2>
             <div class="projects__info">
-              <img class="projects__img" src="./images/projects/yh-shop.png" />
+              <img
+                class="projects__img"
+                src="./images/projects/포트폴리오.png"
+              />
 
               <ul class="projects__contents">
                 <li>
-                  <strong class="project__subtitle"
-                    >React를 학습하며 yh-shop 쇼핑몰 웹 사이트를 디자인하고,
-                    Netlify를 사용하여 배포하는 경험을 쌓았습니다.</strong
-                  >
+                  <strong class="projects__description"
+                    >BEM 명명 규칙을 사용하여 클래스 이름을 체계적으로 관리하고,
+                    CSS 변수를 활용하여 코드를 재사용하였습니다. 또한 768px
+                    모바일 반응형을 적용한 경험을 쌓았습니다. 현재 보고계신
+                    포트폴리오 웹 사이트입니다.
+                  </strong>
                 </li>
+                <li>#HTML #CSS #JavaScript</li>
+
                 <li>
-                  <strong class="project__subtitle"></strong>#HTML #CSS
-                  #JavaScript #React
+                  <a
+                    href="https://github.com/YounHooooo/portfolio"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-github projects__social-icon"></i>
+                  </a>
+                  <a href="" target="blank">
+                    <i class="fa-solid fa-house projects__social-icon"></i>
+                  </a>
                 </li>
-                <!-- <li>
-                  <strong class="project__subtitle">Back-end : </strong>JAVA,
-                  Servlet & jsp, lombok, ApacheTomcat, Oracle
-                </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <h3 class="projects__name">yh-shop</h3>
+            <h2 class="projects__data">2024.05/15 ~ 2024.05/22</h2>
+            <div class="projects__info">
+              <ul class="projects__contents">
+                <li>
+                  <strong class="projects__description"
+                    >React를 학습하며 yh-shop 쇼핑몰을 디자인 하고 Netlify를
+                    통해 배포하는 경험을 쌓았습니다.
+                  </strong>
+                </li>
+                <li>#HTML #CSS #JavaScript #React #Netlify</li>
+
                 <li>
                   <a href="https://github.com/YounHooooo/yh" target="_blank">
                     <i class="fa-brands fa-github projects__social-icon"></i>
@@ -330,6 +323,7 @@
                   </a>
                 </li>
               </ul>
+              <img class="projects__img" src="./images/projects/yh-shop.png" />
             </div>
           </div>
 
@@ -344,21 +338,15 @@
 
               <ul class="projects__contents">
                 <li>
-                  <strong class="project__subtitle"
+                  <strong class="projects__description"
                     >사업 아이디어는 있지만 자금이 부족한 판매자가 목표금액,
                     투자금액, 모금기간 등을 정하여 투자 의지가 있는 익명의
                     구매자에게 투자 받을 수 있는 '와디즈'를 모티브로 제작된 펀딩
                     웹 사이트입니다.
                   </strong>
                 </li>
-                <li>
-                  <strong class="project__subtitle"></strong>#HTML #CSS
-                  #JavaScript #Ajax #Jquery #Bootstrap
-                </li>
-                <li>
-                  <strong class="project__subtitle"></strong>#JAVA #Servlet #jsp
-                  #lombok #ApacheTomcat #Oracle
-                </li>
+                <li>#HTML #CSS #JavaScript #Ajax #Jquery #Bootstrap</li>
+                <li>#JAVA #Servlet #jsp #lombok #ApacheTomcat #Oracle</li>
                 <li>
                   <a
                     href="https://github.com/YounHooooo/FundingFive"
@@ -370,35 +358,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- <div class="projects__card">
-            <h3 class="projects__name">yh-shop</h3>
-            <h2 class="projects__data">2024.00.00 ~ 2024.00.00</h2>
-            <div class="projects__info">
-              <img class="projects__img" src="./images/projects/yh-shop.png" />
-
-              <div class="projects__contents">
-                <div>주요기능 : 검색기능 , 필터 , 로그인</div>
-                <div>github</div>
-                <div>url</div>
-                <div>Front-end : HTML, CSS, JavaScript, React, Bootstrap</div>
-                <div></div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <a
-            class="projects__link"
-            href="https://yh-shop.netlify.app/"
-            target="_blank"
-            title="yh-shop"
-          >
-            <img
-              class="projects__img"
-              src="./images/projects/yh-shop.png"
-              alt="yh-shop"
-            />
-          </a> -->
         </div>
       </section>
 

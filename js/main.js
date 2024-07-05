@@ -59,9 +59,14 @@ const scrollReveal = ScrollReveal({
   duration: 2000,
   delay: 200,
 });
-scrollReveal.reveal('.home__data, .about__img, .skills__text, .about__list');
-scrollReveal.reveal('.home__img, .about__data, .skills__img', { delay: 400 });
-scrollReveal.reveal('.skills__data, .contact__input', {
+scrollReveal.reveal(
+  '.home__data, .about__img, .skills__text, .about__list, .projects__img',
+);
+scrollReveal.reveal(
+  '.home__img, .about__data, .skills__img, .projects__contents',
+  { delay: 400 },
+);
+scrollReveal.reveal('.skills__data, .contact__input, .projects__card', {
   interval: 200,
 });
 
@@ -74,7 +79,7 @@ const typeit = new TypeIt('#typeit', {
 
 typeit
   .type('안녕하세요 😊<br/>')
-  .type('프론트엔드 웹 개발자를 희망하는 ')
+  .type('프론트엔드 웹 개발자가 되고싶은 ')
   .type('<strong class="home__title-color">Lee Youn ho</strong>', {
     delay: 300,
   })
