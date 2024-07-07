@@ -1,3 +1,16 @@
+// home__title 텍스트 변경
+let greetingArray = ['즐거움', '설렘', '흥분'];
+let textNum = 0;
+
+setInterval(changeText, 2000);
+function changeText() {
+  ++textNum;
+  if (textNum === greetingArray.length) {
+    textNum = 0;
+  }
+  document.getElementById('greeting').innerText = greetingArray[textNum];
+}
+
 function toggleMenu() {
   const $navMenu = document.getElementById('nav__menu');
   $navMenu.classList.toggle('show');
