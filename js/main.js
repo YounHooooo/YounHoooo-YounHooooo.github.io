@@ -86,3 +86,25 @@ typeit
   .delete(11, { delay: 300 })
   .type('<strong class="home__title-color">이윤호</strong>입니다.')
   .go();
+
+// 이메일 클라이언트 열기
+const $contactForm = document.getElementById('contactForm');
+
+$contactForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  // 폼 하위 정보
+  const name = $contactForm.name.value;
+  const subject = $contactForm.subject.value;
+  const message = $contactForm.message.value;
+  const to = 'yh6316037@gmail.com';
+
+  // 이메일 클라이언트 열기
+  location.href =
+    'mailto:' +
+    encodeURIComponent(to) +
+    '?subject=' +
+    encodeURIComponent(`[${name}님 문의] ${subject}`) +
+    '&body=' +
+    encodeURIComponent(message);
+});

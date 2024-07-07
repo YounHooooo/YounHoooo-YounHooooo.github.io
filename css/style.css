@@ -338,8 +338,8 @@ body {
 }
 
 .projects__description {
-  font-size: 1.3rem;
-  font-weight: bolder;
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-bold);
 }
 
 .projects__name {
