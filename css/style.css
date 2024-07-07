@@ -153,7 +153,8 @@ body {
   line-height: calc(var(--font-size-2) * 1.2);
   font-weight: var(--font-weight-black);
   margin-bottom: var(--spacing-1);
-  height: 85px;
+  width: 42rem;
+  height: 6rem;
 }
 
 .home__data {
@@ -500,6 +501,8 @@ body {
   }
 
   .home__title {
+    max-width: 31rem;
+    height: 5rem;
     margin-top: var(--spacing-3);
   }
 
