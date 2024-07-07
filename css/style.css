@@ -225,12 +225,6 @@ body {
   min-height: 500px;
 }
 
-/* .about__click {
-  animation: blink-animation 1s infinite alternate;
-  background-color: #000;
-  color: #ff0;
-} */
-
 .about__img {
   max-width: 310px;
   border-radius: 50%;
@@ -240,6 +234,7 @@ body {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-medium);
   color: var(--black-color);
+  margin-top: 2rem;
 }
 
 .about__list li {
@@ -385,6 +380,11 @@ body {
 .projects__social-icon {
   font-size: 1.8rem;
   padding-right: 1.2rem;
+  transition: 0.3;
+}
+
+.projects__social-icon:hover {
+  transform: scale(1.05);
 }
 
 /* Contact */
